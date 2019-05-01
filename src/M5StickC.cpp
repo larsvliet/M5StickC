@@ -26,7 +26,7 @@ void M5StickC::begin(bool LCDEnable, bool PowerEnable, bool SerialEnable){
 	if (PowerEnable) {
 		Axp.begin();
 	} else {
-		RTC.begin();
+		Rtc.begin();
 	}
 
 	// LCD INIT
