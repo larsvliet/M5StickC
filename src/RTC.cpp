@@ -1,9 +1,12 @@
 #include "RTC.h"
 
 
-
 RTC::RTC(){
-  Wire1.begin(21,22);  
+  
+}
+
+void RTC::begin() {
+  Wire1.begin(21,22);
 }
 
 void RTC::GetBm8563Time(void){
